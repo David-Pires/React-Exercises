@@ -2,7 +2,7 @@
 export default function segundo() {
   return (
     <div>
-      <h1>segundo</h1>
+      <h1>JSX #01</h1>
       
     </div>
     )
