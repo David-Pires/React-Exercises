@@ -5,11 +5,12 @@ export default function utilizingTitle() {
         <Titulo 
                 principal="Página de Cadastro"
                 secundario="Incluir, alterar e excluir coisas!"
+                pequeno={true}
         />   
         <Titulo 
         principal="Página de Login"
         secundario="Informe seu e-mail e senha"
-        pequeno={true}
+        pequeno={false}
 />            
       </div>    
   );
