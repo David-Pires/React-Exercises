@@ -1,4 +1,40 @@
 export default function Repeticao1() {
+
+  const meuArrayDeNomes = [
+    'Allan',
+    'Gabriel',
+    'Italo',
+    'Airanildo',
+    'David',
+    'Vinicius',
+  ]
+
+  function percorreArray() {
+    const arrayVazio = [];
+
+    for (let i = 0; i < meuArrayDeNomes.length; i++) {
+      arrayVazio.push(<li>{meuArrayDeNomes[i]}</li>)
+           
+    }
+    return arrayVazio;
+  }
+  return(
+    <>
+      <ul>{percorreArray()}</ul>
+    </>
+  )
+
+  }
+
+
+
+
+
+
+
+  {/*  
+  
+  export default function Repeticao1() {
   const listaAprovados = [
     'João',
     'Maria',
@@ -7,20 +43,22 @@ export default function Repeticao1() {
     'Cheguevara',
     'Marcos',
     'Cristovão',
+    'Barnabé'
   ]
 
   function renderizarLista() {
-    return (
-      <>
-      <li>Elemento #1</li>
-      <li>Elemento #2</li>
-      <li>Elemento #3</li>
-      
-      </>
-    )
-  }
+    const itens = [];
+
+    for (let i = 0; i < listaAprovados.length; i++) {
+      itens.push(<li>{listaAprovados[i]}</li>);      
+    }    
+        return itens
+  } 
+  
   return (
     <ul>
+    {renderizarLista()}
     </ul>
   )
-}
+  
+  */}
