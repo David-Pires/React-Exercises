@@ -9,7 +9,7 @@ export default function Repeticao1() {
     function fazerRepeticaoArray() {
       const vazio = [];
       for (let i = 0; i < meuObjetoComNomes.length; i++) {
-        vazio.push(<li>{meuObjetoComNomes[i]}</li>)        
+        vazio.push(<li key={i}>{meuObjetoComNomes[i]}</li>)        
       }
       return vazio;
     }
