@@ -1,4 +1,28 @@
 export default function Repeticao1() {
+  const meuObjeto = ["1", "2"];
+
+  function as() {
+    return meuObjeto.map((nome, i ) => <li key={i}>{nome}</li>)
+  }
+  return (
+    <ul>
+      {as()}
+      <br></br>
+      retorno de algo
+    </ul>
+  );
+}
+
+// Retorno com Key e arrowfunction
+// function fazerRepeticaoArray() {
+
+//   return meuObjetoComNomes.map((nome, i) => <li key={i}>{nome}</li>)
+// }
+
+{
+  /*  
+  
+  export default function Repeticao1() {
     const meuObjetoComNomes = [
       'Ab',
       'Baby',
@@ -22,39 +46,6 @@ export default function Repeticao1() {
 
   }
 
-
-
-
-
-
-
-  {/*  
   
-  export default function Repeticao1() {
-  const listaAprovados = [
-    'João',
-    'Maria',
-    'Pedro',
-    'Lucio',
-    'Cheguevara',
-    'Marcos',
-    'Cristovão',
-    'Barnabé'
-  ]
-
-  function renderizarLista() {
-    const itens = [];
-
-    for (let i = 0; i < listaAprovados.length; i++) {
-      itens.push(<li>{listaAprovados[i]}</li>);      
-    }    
-        return itens
-  } 
-  
-  return (
-    <ul>
-    {renderizarLista()}
-    </ul>
-  )
-  
-  */}
+  */
+}
