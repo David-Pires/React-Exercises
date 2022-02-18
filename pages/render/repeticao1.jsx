@@ -1,27 +1,23 @@
 export default function Repeticao1() {
-
-  const meuArrayDeNomes = [
-    'Allan',
-    'Gabriel',
-    'Italo',
-    'Airanildo',
-    'David',
-    'Vinicius',
-  ]
-
-  function percorreArray() {
-    const arrayVazio = [];
-
-    for (let i = 0; i < meuArrayDeNomes.length; i++) {
-      arrayVazio.push(<li>{meuArrayDeNomes[i]}</li>)
-           
+    const meuObjetoComNomes = [
+      'Ab',
+      'Baby',
+      'Cobby',
+      'Trustyworth',
+    ]
+    
+    function fazerRepeticaoArray() {
+      const vazio = [];
+      for (let i = 0; i < meuObjetoComNomes.length; i++) {
+        vazio.push(<li>{meuObjetoComNomes[i]}</li>)        
+      }
+      return vazio;
     }
-    return arrayVazio;
-  }
-  return(
-    <>
-      <ul>{percorreArray()}</ul>
-    </>
+
+    return(
+      <ul>
+      {fazerRepeticaoArray()}
+      </ul>     
   )
 
   }
