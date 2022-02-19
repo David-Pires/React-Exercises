@@ -1,16 +1,18 @@
 export default function Repeticao1() {
-  const meuObjeto = ["1", "2"];
+    const myObject = [
+      'object 1',
+      'object 2',
+      'object 3',
+    ]
 
-  function as() {
-    return meuObjeto.map((nome, i ) => <li key={i}>{nome}</li>)
-  }
-  return (
-    <ul>
-      {as()}
-      <br></br>
-      retorno de algo
-    </ul>
-  );
+    function myArray() {
+      return myObject.map(nome => <li>{nome}</li>)
+    }
+    return(
+      <ul>
+        {myArray()}<br/>Something here
+      </ul>
+    )
 }
 
 // Retorno com Key e arrowfunction
