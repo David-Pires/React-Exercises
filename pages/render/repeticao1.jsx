@@ -6,7 +6,7 @@ export default function Repeticao1() {
     ]
 
     function myArray() {
-      return myObject.map(nome => <li>{nome}</li>)
+      return myObject.map((objects, i) => <li key={i}>{objects}</li>)
     }
     return(
       <ul>
