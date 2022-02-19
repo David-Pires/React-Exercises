@@ -5,5 +5,4 @@ export default [
   new Produto(2, "Monitor 24pl", 543),
   new Produto(3, "Notebook i7", 4543),
   new Produto(3, "Samsung sd 128", 343),
-
 ]

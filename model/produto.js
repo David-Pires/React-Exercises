@@ -1,8 +1,6 @@
 export default class Produto {
-
-  class Produto {
-    #id,
-    #nome,
+    #id
+    #nome
     #preco
   
     constructor(id, nome, preco) {
@@ -20,5 +18,5 @@ export default class Produto {
       return this.#preco;
     }
 
-  }
+  
 }
