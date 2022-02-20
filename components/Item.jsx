@@ -1,6 +1,8 @@
 export default function Item(props) {
   return (
-    <li>{props.conteudo}</li>
+    <li >
+    {props.conteudo}
+    </li>
 
   );
 }
