@@ -12,6 +12,7 @@ export default function botao(props) {
     }
   return (
     <div>      
+    <input type="text" onChange={e => console.log(e.target.value)} />
     <button onClick={acao1}>Click #1</button>
     <button onClick={acao2}>Click #2</button>
     <button onClick={function () {
