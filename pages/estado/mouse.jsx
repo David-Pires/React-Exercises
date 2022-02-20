@@ -23,7 +23,7 @@ export default function mouse() {
 
     x = e.clientX
     y = e.clientY
-    console.log('valor alterado')
+    console.log('valor alterado a')
   }
   return (
     
